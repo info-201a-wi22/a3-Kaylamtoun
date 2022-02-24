@@ -1,0 +1,36 @@
+---
+title: "Incarceration Report"
+author: "Kayla Tounalom"
+date: "2/19/2022"
+output: html_document
+---
+```{r setup, include=FALSE, warning = FALSE, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+```{r,  include=FALSE, warning = FALSE, echo=FALSE, message=FALSE}
+library(ggplot2)
+library(plotly)
+library(tidyverse)
+library(dplyr)
+library(maps)
+```
+
+#Female Incarceration in the United States 
+
+In this report, I am analyzing incarceration data. The data I am analyzing is the comparison between men's and women's incarceration numbers. The reason I am comparing the incarceration of men and women is there is a trend in data that showcases that there is an increase in incarceration throughout the U.S. it is important to look at incarceration data about women because there are implications that the outside world may or may not think of such as abuse, inadequate health checks (especially reproductive health), disruption in family relations and much more relating to female incarceration. With there being more females incarcerated over time its important to bring awareness of issues or negatives that affect females specifically.
+
+
+### Chart 1
+```{r pressure, echo=FALSE, warning = FALSE,  message=FALSE}
+ggplotly()
+```
+
+### Chart 2
+```{r pressure, echo=FALSE, warning = FALSE,  message=FALSE}
+ggplotly()
+```
+
+### Map
+```{r echo=FALSE, warning = FALSE,  message=FALSE}
+ggplotly()
+```
