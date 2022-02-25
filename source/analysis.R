@@ -82,7 +82,7 @@ highest_percent_femaleW <- incarceration_data %>%
 
 # CA
 
-#State with most female jail population
+#State with most female incarcerated population
  state_female_incarceration <- incarceration_data %>%
     drop_na() %>%
     filter(female_jail_pop == max(female_jail_pop)) %>%
