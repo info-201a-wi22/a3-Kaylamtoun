@@ -31,12 +31,12 @@ print(num_features_incarceration)
 
 #121 total columns
 
-#range of years in Incarceration data
+#Range of years in Incarceration data
 range_years <- range(incarceration_data$year)
 
 #1970-2018 
 
-#What is the total number of black females incarcerated in 2000?
+#Total number of black females incarcerated in 2000
 black_female_2000 <- incarceration_data%>%
   group_by(year)%>%
   summarise(black_female_prison_pop = sum(black_female_prison_pop, na.rm = T))%>%
@@ -46,7 +46,7 @@ black_female_2000 <- incarceration_data%>%
 
 # 17407
 
-#What is the total number of black females incarcerated in 1970?
+#Total number of black females incarcerated in 1970
 black_female_1970 <- incarceration_data%>%
   group_by(year)%>%
   summarise(black_female_prison_pop = sum(black_female_prison_pop, na.rm = T))%>%
@@ -56,7 +56,7 @@ black_female_1970 <- incarceration_data%>%
 
 #86
 
-#What is the total number of white females incarcerated in 2000?
+#Total number of white females incarcerated in 2000
 white_female_2000 <- incarceration_data%>%
   group_by(year)%>%
   summarise(white_female_prison_pop= sum(white_female_prison_pop, na.rm = T))%>%
